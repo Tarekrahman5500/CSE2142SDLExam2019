@@ -88,5 +88,11 @@ public class StudentList {
             }
             System.out.println("Data Loaded.");
         }
+        else if(!args[0].contains("a") && !args[0].contains("r") && !args[0].contains("+") && !args[0].contains("?") && !args[0].contains("c") ) {
+
+            System.out.println("Invalid Selection");
+            System.exit(0);
+
+        }
     }
 }
