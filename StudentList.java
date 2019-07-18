@@ -57,10 +57,8 @@ public class StudentList {
                     BufferedWriter Student_filereader = new BufferedWriter(new FileWriter("students.txt", true));
                     String Student_Search = args[0].substring(1);
                     Date date = new Date();
-                    String date_format = "dd/mm/yyyy-hh:mm:ss a";
-                    DateFormat dateFormat = new SimpleDateFormat(date_format);
-                    String format_date = dateFormat.format(date);
-                    Student_filereader.write(", " + Student_Search + "\nList last updated on " + format_date);
+                    DateFormat dateFormat = new SimpleDateFormat("dd/mm/yyyy-hh:mm:ss a");
+                    Student_filereader.write(", " + Student_Search + "\nList last updated on " + dateFormat.format(date));
                     Student_filereader.close();
                 } catch (Exception e) {
                 }
