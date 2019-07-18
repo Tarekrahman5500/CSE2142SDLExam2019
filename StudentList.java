@@ -19,13 +19,13 @@ public class StudentList {
 
 //		Check arguments
 
-        if (!args[0].contains("a") && !args[0].contains("r") && !args[0].contains("+") && !args[0].contains("?") && !args[0].contains("c")) {
+        if (!args[0].contains(Constants.A) && !args[0].contains(Constants.R) && !args[0].contains(Constants.plus) && !args[0].contains(Constants.Question_Mark) && !args[0].contains(Constants.C)) {
 
             System.out.println("Invalid Selection");
             System.exit(0);
 
         } else {
-            if (args[0].equals("a")) {
+            if (args[0].equals(Constants.A)) {
                 System.out.println("Loading data ...");
                 try {
                     // BufferedReader Student_filereader = new BufferedReader(new InputStreamReader(new FileInputStream("students.txt")));
@@ -38,7 +38,7 @@ public class StudentList {
                 } catch (Exception e) {
                 }
                 System.out.println("Data Loaded.");
-            } else if (args[0].equals("r")) {
+            } else if (args[0].equals(Constants.R)) {
                 System.out.println("Loading data ...");
                 try {
                     // BufferedReader Student_filereader = new BufferedReader(new InputStreamReader(new FileInputStream("students.txt")));
@@ -51,7 +51,7 @@ public class StudentList {
                 } catch (Exception e) {
                 }
                 System.out.println("Data Loaded.");
-            } else if (args[0].contains("+")) {
+            } else if (args[0].contains(Constants.plus)) {
                 System.out.println("Loading data ...");
                 try {
                     BufferedWriter Student_filereader = new BufferedWriter(new FileWriter("students.txt", true));
@@ -66,7 +66,7 @@ public class StudentList {
                 }
 
                 System.out.println("Data Loaded.");
-            } else if (args[0].contains("?")) {
+            } else if (args[0].contains(Constants.Question_Mark)) {
                 System.out.println("Loading data ...");
                 try {
                     // BufferedReader Student_filereader = new BufferedReader(new InputStreamReader(new FileInputStream("students.txt")));
@@ -83,7 +83,7 @@ public class StudentList {
                 } catch (Exception e) {
                 }
                 System.out.println("Data Loaded.");
-            } else if (args[0].contains("c")) {
+            } else if (args[0].contains(Constants.C)) {
                 System.out.println("Loading data ...");
                 try {
                     // BufferedReader Student_filereader = new BufferedReader(new InputStreamReader(new FileInputStream("students.txt")));
